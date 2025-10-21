@@ -1,0 +1,8 @@
+mkdir -p .github/workflows
+cat > .github/workflows/gh-pages.yml <<'YAML'
+# Вставьте сюда точно содержимое workflow из блока выше
+YAML
+
+git add .github/workflows/gh-pages.yml
+git commit -m "Add GH Pages publish workflow"
+git push origin main
