@@ -1,10 +1,5 @@
-name: Publish docs to GitHub Pages
-
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
+permissions:
+  contents: write
 
 jobs:
   deploy:
@@ -12,11 +7,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Validate docs folder
-        run: |
-          echo "Listing docs/ folder"
-          ls -la docs || true
+        with:
+          persist-credentials: true
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
