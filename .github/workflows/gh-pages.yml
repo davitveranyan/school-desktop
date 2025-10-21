@@ -1,3 +1,11 @@
+name: Publish docs to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
 permissions:
   contents: write
 
@@ -10,6 +18,11 @@ jobs:
         with:
           persist-credentials: true
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Validate docs folder
+        run: |
+          echo "Listing docs/ folder"
+          ls -la docs || true
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
