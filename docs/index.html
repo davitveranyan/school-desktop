@@ -31,8 +31,8 @@
     <section class="hero" style="background: linear-gradient(135deg,#2D4A3E 0%,#1a2f26 100%);">
       <div class="container hero-inner">
         <div class="hero-left">
-          <h1 id="heroTitle">EduVerse</h1>
-          <p id="heroSubtitle">Вселенная знаний в каждой школе — сервер, панель учителя и панель ученика</p>
+          <h1 id="heroTitle" data-i18n="hero.title">EduVerse</h1>
+          <p id="heroSubtitle" data-i18n="hero.subtitle">Вселенная знаний в каждой школе — сервер, панель учителя и панель ученика</p>
           <div class="cta">
             <a class="btn primary" href="#download" data-i18n="cta.download">Скачать</a>
             <a class="btn ghost" href="#features" data-i18n="cta.features">Узнать больше</a>
@@ -42,15 +42,15 @@
           <div class="card-range">
             <div class="role-card card-server">
               <h3 data-i18n="select.server">Сервер</h3>
-              <p>Централизованное управление, бэкапы и мониторинг.</p>
+              <p data-i18n="select.server.desc">Централизованное управление, бэкапы и мониторинг.</p>
             </div>
             <div class="role-card card-teacher">
               <h3 data-i18n="select.teacher">Учитель</h3>
-              <p>Создание тестов, статистика, классное управление.</p>
+              <p data-i18n="select.teacher.desc">Создание тестов, статистика, классное управление.</p>
             </div>
             <div class="role-card card-student">
               <h3 data-i18n="select.student">Ученик</h3>
-              <p>Прохождение тестов, учебные материалы и личная статистика.</p>
+              <p data-i18n="select.student.desc">Прохождение тестов, учебные материалы и личная статистика.</p>
             </div>
           </div>
         </div>
@@ -61,20 +61,20 @@
       <h2 data-i18n="features.title">Ключевые возможности</h2>
       <div class="features-grid">
         <article class="feature">
-          <h3>Локальный сервер</h3>
-          <p>Разворачивается локально или в облаке, хранение данных в SQLite/Postgres.</p>
+          <h3 data-i18n="features.local_server.title">Локальный сервер</h3>
+          <p data-i18n="features.local_server.desc">Разворачивается локально или в облаке, хранение данных в SQLite/Postgres.</p>
         </article>
         <article class="feature">
-          <h3>Тест‑движок</h3>
-          <p>Создание тестов, автооценка MCQ, история попыток и аналитика.</p>
+          <h3 data-i18n="features.test_engine.title">Тест‑движок</h3>
+          <p data-i18n="features.test_engine.desc">Создание тестов, автооценка MCQ, история попыток и аналитика.</p>
         </article>
         <article class="feature">
-          <h3>Персонализация</h3>
-          <p>Настройка внешнего вида, логотипа, фонов и локализация интерфейса.</p>
+          <h3 data-i18n="features.personalization.title">Персонализация</h3>
+          <p data-i18n="features.personalization.desc">Настройка внешнего вида, логотипа, фонов и локализация интерфейса.</p>
         </article>
         <article class="feature">
-          <h3>Оффлайн‑режим</h3>
-          <p>Десктоп‑сервер и клиенты работают в локальной сети без интернета.</p>
+          <h3 data-i18n="features.offline_mode.title">Оффлайн‑режим</h3>
+          <p data-i18n="features.offline_mode.desc">Десктоп‑сервер и клиенты работают в локальной сети без интернета.</p>
         </article>
       </div>
     </section>
@@ -84,29 +84,29 @@
       <p data-i18n="download.note">Собранные установщики будут доступны в репозитории (Actions → Artifacts). Ниже — ссылки на репозиторий и инструкции по сборке.</p>
       <div class="download-grid">
         <div class="download-card">
-          <h4>Windows</h4>
-          <p>MSI / EXE (unsigned). Подпись можно добавить позже.</p>
-          <a class="btn" href="https://github.com/davitveranyan/school-desktop/releases" target="_blank" rel="noopener">Артефакты</a>
+          <h4 data-i18n="download.windows.title">Windows</h4>
+          <p data-i18n="download.windows.desc">MSI / EXE (unsigned). Подпись можно добавить позже.</p>
+          <a class="btn" href="https://github.com/davitveranyan/school-desktop/releases" target="_blank" rel="noopener" data-i18n="download.artifacts">Артефакты</a>
         </div>
         <div class="download-card">
-          <h4>macOS</h4>
-          <p>DMG / PKG (unsigned). Требуется notarize для удаления Gatekeeper предупреждений.</p>
-          <a class="btn" href="https://github.com/davitveranyan/school-desktop/releases" target="_blank" rel="noopener">Артефакты</a>
+          <h4 data-i18n="download.macos.title">macOS</h4>
+          <p data-i18n="download.macos.desc">DMG / PKG (unsigned). Требуется notarize для удаления Gatekeeper предупреждений.</p>
+          <a class="btn" href="https://github.com/davitveranyan/school-desktop/releases" target="_blank" rel="noopener" data-i18n="download.artifacts">Артефакты</a>
         </div>
       </div>
     </section>
 
     <section id="contact" class="container section">
       <h2 data-i18n="contact.title">Контакты</h2>
-      <p>Репозиторий проекта: <a href="https://github.com/davitveranyan/school-desktop" target="_blank" rel="noopener">github.com/davitveranyan/school-desktop</a></p>
-      <p>Если хотите, могу автоматически настроить GitHub Pages или Action для деплоя (нужен push файлов).</p>
+      <p><span data-i18n="contact.repo_label">Репозиторий проекта:</span> <a href="https://github.com/davitveranyan/school-desktop" target="_blank" rel="noopener">github.com/davitveranyan/school-desktop</a></p>
+      <p data-i18n="contact.pages_note">Если хотите, могу автоматически настроить GitHub Pages или Action для деплоя (нужен push файлов).</p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© EduVerse — All rights reserved</p>
-      <p class="small">Сайт сгенерирован автоматически. Для вопросов: откройте issue в репозитории.</p>
+      <p data-i18n="footer.copyright">© EduVerse — All rights reserved</p>
+      <p class="small" data-i18n="footer.auto_generated">Сайт сгенерирован автоматически. Для вопросов: откройте issue в репозитории.</p>
     </div>
   </footer>
 
