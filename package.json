@@ -1,0 +1,1 @@
+{"name":"school-desktop","version":"1.0.0","description":"School Desktop Application","author":"davitveranyan","license":"MIT","private":true,"scripts":{"dev":"tauri dev","build":"tauri build","start":"react-scripts start"},"dependencies":{"@tauri-apps/api":"^1.0.0","react":"^18.0.0","react-dom":"^18.0.0"},"devDependencies":{"@tauri-apps/cli":"^1.0.0"}}
